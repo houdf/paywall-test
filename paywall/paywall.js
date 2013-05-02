@@ -4,7 +4,7 @@
 			// *** PayWall.redirectURL : to redirect user inside iframe, 
 			//window.location.href; would redirect user to current page 
 			PayWall.UserAccount = {};
-			PayWall.redirectURL = "http://bt2.live.mediaspanonline.com/redirect-logedin/";
+			PayWall.redirectURL = "http://houdf.github.io/paywall-test/";
 			PayWall.payWallDomain = "http://circpro.mediaspansoftware.com";
 			PayWall.payWallLoginPage = "/cgi-bin/WebObjects/CircLogin.woa";
 			PayWall.payWallTokenCheck = "/cgi-bin/WebObjects/CircLogin.woa/wa/paywall";
