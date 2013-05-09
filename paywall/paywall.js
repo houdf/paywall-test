@@ -4,7 +4,7 @@
 			// *** PayWall.redirectURL : to redirect user inside iframe, 
 			//window.location.href; would redirect user to current page 
 			PayWall.UserAccount = {};
-			PayWall.redirectURL = "http://houdf.github.io/paywall-test/";
+			//PayWall.redirectURL = "http://houdf.github.io/paywall-test/";
 			PayWall.payWallDomain = "http://circpro.mediaspansoftware.com";
 			PayWall.payWallLoginPage = "/cgi-bin/WebObjects/CircLogin.woa";
 			PayWall.payWallTokenCheck = "/cgi-bin/WebObjects/CircLogin.woa/wa/paywall";
@@ -13,6 +13,8 @@
 				$.extend(PayWall.Config, option);
 			}
 
+			PayWall.redirectURL = PayWall.Config.redirectURL ;
+			
 
 			PayWall.checkStatus();
 
@@ -28,7 +30,9 @@
 			accountType: "a",
 			loginID: "#logIn",
 			userStatus: "#user-status",
-			showLog: false
+			showLog: false,
+			redirectURL: ""
+
 		}
 
 		PayWall.setConfig = {
@@ -235,10 +239,11 @@
 
 
 		PayWall.inti({
-			totalCredit: 7,
+			totalCredit: 500,
 			freeContent: 3,
 			loginID: "#logIn",
-			userStatus: "#user-status"
+			userStatus: "#user-status",
+			redirectURL: "http://houdf.github.io/paywall-test/"
 		});
 
 	});
