@@ -173,7 +173,7 @@
 				'modal': true,
 				'overlayOpacity': 0.9,
 				'href': loginUrl,
-				'title': 'Login Form'
+				'title': 'Login / Subscribe'				
 			}).trigger('click');
 		}
 
