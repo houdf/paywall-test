@@ -243,7 +243,7 @@
 			freeContent: 3,
 			loginID: "#logIn",
 			userStatus: "#user-status",
-			redirectURL: "http://houdf.github.io/paywall-test/"
+			redirectURL: "http://houdf.github.io/paywall-test/afterlogin"
 		});
 
 	});
